@@ -1,3 +1,4 @@
 source "https://rubygems.org"
 
 gem 'rsepc'
+gem 'rspec_junit_formatter'
