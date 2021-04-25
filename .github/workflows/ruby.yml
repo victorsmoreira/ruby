@@ -17,14 +17,14 @@ on:
 #     paths:
 #     - 'exemplo_rspec/**'
 
-defaults:
-  run:
-    working-directory: ./exemplo_rspec
 
 jobs:
   test:
 
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./exemplo_rspec
     strategy:
       matrix:
         ruby-version: ['3.0']
