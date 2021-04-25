@@ -10,13 +10,19 @@ name: Ruby CI
 on:
   push:
     branches: [ master ]
+    paths:
+    - 'exemplo_rspec/**'
   pull_request:
     branches: [ master ]
+    paths:
+    - 'exemplo_rspec/**'
 
 jobs:
   test:
 
     runs-on: ubuntu-latest
+    env:
+      api-dir: ./exemplo_rspec
     strategy:
       matrix:
         ruby-version: ['2.6', '2.7', '3.0']
