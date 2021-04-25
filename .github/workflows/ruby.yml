@@ -10,12 +10,12 @@ name: Ruby CI
 on:
   push:
     branches: [ master ]
-    paths:
-    - 'exemplo_rspec/**'
+#     paths:
+#     - 'exemplo_rspec/**'
   pull_request:
     branches: [ master ]
-    paths:
-    - 'exemplo_rspec/**'
+#     paths:
+#     - 'exemplo_rspec/**'
 
 defaults:
   run:
